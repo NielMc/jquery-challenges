@@ -6,6 +6,8 @@ body{
  	background-color: #eee;
 }
 
+
+
 h1{
 	font-size: 3em;
 	text-align: center;
@@ -73,6 +75,10 @@ div{
 	padding: 20px;
 	background-color: #fff;
 }
+.pink {
+	background-color: pink;
+	
+}
 .highlight_stream{
 	background-color: #EB5255;
 }
@@ -86,7 +92,9 @@ div{
 	margin-bottom:10px;
 
 }
-
+.card p {
+	display:none;
+}
 /*************************
 Navigation
 

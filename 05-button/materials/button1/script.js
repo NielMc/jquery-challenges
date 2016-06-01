@@ -1,81 +1,26 @@
-
-/*------------------------------------- hide ---------------*/
-/*
 $(document).ready(function(){
-
-    $('div').click(function(){
-        $('div').hide();
-    });
+/*$("#hide").click(function(){
+	$('#hide').hide('1000');	
 });
-*/
-/*------------------------------------- hide slow ---------------*/
-/*
-$(document).ready(function(){
-
-    $('div').click(function(){
-        $('div').hide('slow');
-    });
+$("div").click(function(){
+	$("#disappear").toggle('slow');
 });
-*/
-/*------------------------------------- toggle ---------------*/
-/*
-$(document).ready(function(){
-
-    $('div').click(function(){
-        $('p').toggle('slow');
-    });
+$("div").click(function(){
+	$("#disappear").slideToggle('fast');
 });
-*/
-
-/*------------------------------------- slideToggle ---------------*/
-/*
-$(document).ready(function(){
-
-    $('div').click(function(){
-        $('p').slideToggle('slow');
-    });
+$("#hide").mouseenter(function(){
+	$("#hide").fadeTo(1000,0.5);
 });
-
-*/
-
-/*------------------------------------- fade mouseenter ---------------*/
-/*
-$(document).ready(function(){
-    $('div').mouseenter(function(){
-        $('div').fadeTo('slow',.5);
-    });
-     $('div').mouseleave(function(){
-        $('div').fadeTo('slow',1);
-    });
+$("#hide").mouseleave(function(){
+	$("#hide").fadeTo(1000,1);
+});*/
+$("div").mouseenter(function(){
+$(this).removeClass("makeRed").addClass("makeBorder")
 });
-
-*/
-/*------------------------------------- fade mouseenter toggle---------------*/
-/*
-$(document).ready(function(){
-    $('div').mouseenter(function(){
-    	$('div').fadeTo('fast',.5);
-    });
-    $('div').mouseleave(function(){
-    	$('div').fadeTo('fast',1);
-    });
-
-    $('div').click(function(){
-    	$('p').toggle('slow');
-    });
+$("div").mouseleave(function(){
+$(this).addClass("makeRed").removeClass("makeBorder")
 });
-*/
-/*------------------------------------- Method Chaining---------------*/
-
-$(document).ready(function(){
-    $('div').mouseenter(function(){
-    	$('div').removeClass('makeBlue').addClass('makeBorder');
-    });
-    $('div').mouseleave(function(){
-    	$('div').removeClass('makeBorder').addClass('makeBlue');
-    });
-
-    $('div').click(function(){
-    	$('p').slideToggle('slow');
-    });
+$("div").click(function(){
+	$("#disappear").slideUp('fast').slideDown('slow');
+});
 });
